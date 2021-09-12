@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Laboratorio 1</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <style>
+        th {
+            background-color: black;
+            color: white;
+            height: 20px;
+            text-align: center;
+        }
+        tr:nth-child(even){
+            background-color: #cbcbcb;
+        }
+        tr:nth-child(odd){
+            background-color: #fefafa;
+        }
+        td, th {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        input[type=text], textArea {
+            background-color: #7f7f7f;
+            border: 2px solid black;
+        }
+        input[type=submit] {
+            color: white;
+            border-radius: 10px 10px 10px 10px;
+            background: rgb(0,0,0);
+            background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(112,112,112,1) 57%, rgba(215,215,215,1) 100%);
+        }
+        .tabla2 {
+            text-align: right;
+        }
+        table {
+            margin-top: 50px;
+            margin-bot: 50px;
+        }
+    </style>
+    <body>
+        <div>
+            <table>
+                <tr>
+                    <th></th>
+                    <th>Lunes</th>
+                    <th>Martes</th>
+                    <th>Miércoles</th>
+                    <th>Jueves</th>
+                    <th>Viernes</th>
+                    <th>Sábado</th>
+                    <th>Domingo</th>
+                </tr>
+                <tr>
+                    <td>Mañana</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                     <td>Tarde</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                     <td>Noche</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <table class="tabla2">
+                <tr background-color="blue">
+                    <th colspan="2">Formulario de contacto</th>
+                </tr>
+                <tr>
+                    <td text-align="right">Nombre:</td>
+                    <td><input type="text" name="nombre"/></td>
+                </tr>
+                <tr>
+                    <td>Apellidos:</td>
+                    <td><input type="text" name="apellidos"/></td>
+                </tr>
+                <tr>
+                    <td>Fecha de Nacimiento:</td>
+                    <td><input type="text" name="fechaNacimiento"/></td>
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                    <td><input type="text" name="email"/></td>
+                </tr>
+                <tr>
+                    <td>Comentarios:</td>
+                    <td><textarea name="comentario" rows="3" cols="16"></textarea></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center"><input type="submit" value="Enviar"/></td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>
